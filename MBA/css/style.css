@@ -61,7 +61,7 @@ video {
   background-size: cover;
 }
 
-.full-logo {
+.full-lg {
   width: 200px;
   height: auto;
   margin-bottom: 40px;
@@ -109,7 +109,7 @@ video {
   background: #00442e;
 }
 
-.logo {
+.lg {
   margin: 20px 0;
   height: 100%;
   width: auto;
