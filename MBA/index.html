@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Merryday Business App</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google fonts CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+
+<body>
+  <div class="cnt">
+    <div class="section cover cw">
+      <video playsinline autoplay muted loop poster="images/bg.jpg" id="bgvid">
+        <source src="video/bg.mp4" type="video/mp4">
+      </video>
+      <img class="full-logo" src="images/full_logo_white.png" alt="">
+      <div class="cnt-title">
+        <div class="sp"></div>
+        <h1>Perchè scegliere tra un pasto sano ed uno appetitoso quando puoi avere entrambi?</h1>
+        <div class="sp"></div>
+        <div class="cnt-btn-login">
+          <div class="arrow-d a-l"></div>
+          <a class="btn-login" href="#checkbox">Accedi</a>
+          <div class="arrow-d a-r" ></div>
+        </div>
+      </div>
+    </div>
+    <div class="section cm">
+      <div class="cnt-login">
+        <div class="logo-sp">
+          <div class="rd-10"></div>
+          <div class="rd-15"></div>
+          <div class="rd-20"></div>
+          <img class="logo" src="/images/logo.png" alt="">
+          <div class="rd-20"></div>
+          <div class="rd-15"></div>
+          <div class="rd-10"></div>
+        </div>
+        <span class="sp bg"></span>
+        <p class="ptxt mt10">Puoi ordinare, modificare o annullare i tuoi pasti fino alle ore 9:00 del giorno di consegna</p>
+        <form class="login-form">
+          <div class="form-control">
+            <input type="text" placeholder="Username">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="form-control">
+            <input type="password" placeholder="Password">
+            <i class="fas fa-unlock"></i>
+          </div>
+          <div class="remember">
+            <input type="checkbox" checked="checked" id="checkbox">
+            <label class="ptxt" for="checkbox">Ricorda dati account</label>
+          </div>
+          <button class="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</body>
+
+</html>
