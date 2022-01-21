@@ -261,12 +261,12 @@ button.submit:active {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    transition: opacity 0.4s;
   }
 
   .btn-login:active {
     color: #000;
     background: #FFF;
+    transition: opacity 0.4s;
   }
 }
 
