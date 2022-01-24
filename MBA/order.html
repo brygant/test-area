@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google fonts CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+  <div class="header cw">
+    <div class="home">
+      <a href="index.html"><img class="menu-lg" src="images/lg-full-white.png" alt="lg-full-white.png"></a>
+    </div>
+    <ul class="menu">
+      <li><a href="">Assistenza</a></li>
+      <div class="menu-sp"></div>
+      <li><a href="">Contatti</a></li>
+      <div class="menu-sp"></div>
+      <li><a href="">Ordini</a></li>
+      <div class="menu-sp"></div>
+      <li><a href="">Disconnetti</a></li>
+    </ul>
+    <div class="hmb">
+      <div class="hmb-el"></div>
+      <div class="hmb-el"></div>
+      <div class="hmb-el"></div>
+    </div>
+  </div>
+  <div class="carousel">
+
+    <div class="cta">
+      <div class="arrow-d a-l"></div>
+      <a href="" class="btn-transp">Visita merryday.it</a>
+      <div class="arrow-d a-r"></div>
+    </div>
+  </div>
+
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      /* Open Panel */
+      $(".hmb").on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+    });
+  </script>
+</body>
+
+</html>
