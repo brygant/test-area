@@ -1,12 +1,4 @@
 /*--- Custom styles ---*/
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 * {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
@@ -292,6 +284,24 @@ button.submit:active {
   white-space: nowrap;
 }
 
+.hmb {
+  display: none;
+}
+
+/* ! CAROUSEL (slider) */
+.carousel {
+  padding: 10px 0;
+  margin-top: 100px;
+  border: 1px solid red;
+}
+
+.carousel-cell {
+  width: auto;
+  color: #FFF;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
 .cta {
   display: flex;
   align-items: center;
@@ -305,20 +315,6 @@ button.submit:active {
 .cta .a-r {
     transform: translate(-280%, -0%) rotate(135deg);
   }
-
-.carousel {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 20px;
-  background: #eee;
-}
-
-.hmb {
-  display: none;
-}
 
 /*--- Media query ---*/
 @media (max-width: 768px) {
@@ -421,4 +417,12 @@ button.submit:active {
 
 .mt10 {
   margin-top: 10px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }

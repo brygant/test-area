@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="css/all.min.css">
+  <!-- Import CSS Flickity -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css" integrity="sha512-B0mpFwHOmRf8OK4U2MBOhv9W1nbPw/i3W1nBERvMZaTWd3+j+blGbOyv3w1vJgcy3cYhzwgw1ny+TzWICN35Xg==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -38,18 +41,35 @@
       <div class="hmb-el"></div>
     </div>
   </div>
-  <div class="carousel">
-
-    <div class="cta">
-      <div class="arrow-d a-l"></div>
-      <a href="" class="btn-transp">Visita merryday.it</a>
-      <div class="arrow-d a-r"></div>
-    </div>
+  <!-- Carousel (Slider) -->
+  <div class="carousel" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true }'>
+    <div class="carousel-cell"><img src="images/01.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/02.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/03.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/04.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/05.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/06.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/07.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/08.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/09.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/10.jpg" alt=""></div>
+    <div class="carousel-cell"><img src="images/11.jpg" alt=""></div>
   </div>
-
+  <!--
+  <div class="cta">
+    <div class="arrow-d a-l"></div>
+    <a href="" class="btn-transp">Visita merryday.it</a>
+    <div class="arrow-d a-r"></div>
+  </div>
+  </div>
+ -->
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Pacchetto Flickity (slider) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js" integrity="sha512-+m9auGg9ZwnDc37W8RSsLhzKBLVOYsf5BKzSpYrYhQQk6hItXOhBFKHuHbMCpoABCUO6l4HVK+dFwxMIME3E7Q==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
   <script>
     $(document).ready(function() {
       /* Open Panel */
