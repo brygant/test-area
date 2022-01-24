@@ -292,11 +292,11 @@ button.submit:active {
 .carousel {
   padding: 10px 0;
   margin-top: 100px;
-  border: 1px solid red;
 }
 
 .carousel-cell {
-  width: auto;
+  width: 250px;
+  height: 250px;
   color: #FFF;
   margin-right: 10px;
   border-radius: 5px;
