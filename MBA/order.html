@@ -65,6 +65,7 @@
     <div class="crs-cell"><img src="images/021.jpg"></div>
     <div class="crs-cell"><img src="images/022.jpg"></div>
   </div>
+  <div id="today" class="date mb30"></div>
   <div class="lg-sp pdlr20">
     <div class="rd-10"></div>
     <div class="rd-15"></div>
@@ -100,6 +101,7 @@
     <div class="crs-cell"><img src="images/021.jpg"></div>
     <div class="crs-cell"><img src="images/022.jpg"></div>
   </div>
+  <div id="today" class="date mb30"></div>
   <div class="lg-sp pdlr20">
     <div class="rd-10"></div>
     <div class="rd-15"></div>
@@ -135,6 +137,7 @@
     <div class="crs-cell"><img src="images/021.jpg"></div>
     <div class="crs-cell"><img src="images/022.jpg"></div>
   </div>
+  <div id="today" class="date mb30"></div>
   <div class="lg-sp pdlr20">
     <div class="rd-10"></div>
     <div class="rd-15"></div>
@@ -170,6 +173,7 @@
     <div class="crs-cell"><img src="images/021.jpg"></div>
     <div class="crs-cell"><img src="images/022.jpg"></div>
   </div>
+  <div id="today" class="date mb30"></div>
   <div class="lg-sp pdlr20">
     <div class="rd-10"></div>
     <div class="rd-15"></div>
@@ -205,6 +209,7 @@
     <div class="crs-cell"><img src="images/021.jpg"></div>
     <div class="crs-cell"><img src="images/022.jpg"></div>
   </div>
+  <div id="today" class="date mb30"></div>
   <!--
   <div class="cta">
     <div class="arrow-d a-l"></div>
@@ -227,6 +232,13 @@
         $(".menu").toggleClass("menu--open");
       });
     });
+  </script>
+  <script>
+    const a = new Date()
+    const date = a.toLocaleDateString().split('/')
+    const wkdays = ['Lun','Mar','Mer','Gio','Ven','Sab','Dom']
+    const today = wkdays[a.getDay()-1]+' '+(date[0].length < 2 ? '0' + date[0] : date[0]) + '/' + (date[1].length < 2 ? '0' + date[1] : date[1]) + '/' + date[2][2]+date[2][3]
+    document.querySelector('#today').innerText = today
   </script>
 </body>
 

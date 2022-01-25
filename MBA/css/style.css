@@ -295,12 +295,11 @@ button.submit:active {
 /* ! Carousel (slider) */
 .crs {
   padding: 10px 0;
-  margin: 20px 0;
 }
 
 .crs-cell {
   width: 15%;
-  height: auto;
+  height: 200px;
   display: inline-block;
   color: #FFF;
   margin: 0 10px;
@@ -316,10 +315,23 @@ button.submit:active {
 
 .crs-cell img {
   z-index: -1;
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.date {
+  width: 180px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  background: #00442e;
+  color: #FFF;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 40px;
+  margin: 0 auto;
 }
 
 .cta {
@@ -330,11 +342,11 @@ button.submit:active {
 
 .cta .a-l {
     transform: translate(280%, -0%) rotate(315deg);
-  }
+}
 
 .cta .a-r {
     transform: translate(-280%, -0%) rotate(135deg);
-  }
+}
 
 /*--- Media query ---*/
 @media (max-width: 768px) {
@@ -451,6 +463,10 @@ button.submit:active {
 
 .mt90 {
   margin-top: 90px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
 }
 
 .pdlr20 {
