@@ -122,7 +122,6 @@ video {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
   margin: 10px 0;
 }
 
@@ -265,11 +264,13 @@ button.submit:active {
   width: 150px;
   height: auto;
   padding: 0px 10px;
-  z-index: 2;
+  position: ab;
+  z-index: inherit;
 }
 
 .menu {
   width: 100%;
+  z-index: inherit;
 }
 
 .menu li{
@@ -381,6 +382,7 @@ button.submit:active {
 
   .menu--open {
     right: 0%;
+    height: 100vh;
     z-index: 1;
   }
 
@@ -400,7 +402,7 @@ button.submit:active {
     height: 36px;
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: inherit;
   }
 
   .hmb-el {
@@ -448,6 +450,10 @@ button.submit:active {
 
 .mt100 {
   margin-top: 100px;
+}
+
+.pdlr20 {
+  padding: 0 20px;
 }
 
 *,
