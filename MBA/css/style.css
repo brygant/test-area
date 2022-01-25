@@ -289,20 +289,25 @@ button.submit:active {
 }
 
 /* ! CAROUSEL (slider) */
-.carousel {
+.crs {
   padding: 10px 0;
   margin-top: 100px;
   margin-bottom: 10px;
 }
 
-.carousel-cell {
-  width: 150px;
+.crs-cell {
+  width: 15%;
   height: auto;
+  display: inline-block;
   color: #FFF;
-  margin-right: 10px;
-  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.crs-cell img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
   object-fit: cover;
-  counter-increment: gallery-cell;
 }
 
 .cta {
@@ -392,6 +397,10 @@ button.submit:active {
     border-radius: 5px;
     margin-bottom: 10px;
     background: #FFF;
+  }
+
+  .crs-cell {
+    width: 66%;
   }
 }
 
