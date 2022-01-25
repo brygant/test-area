@@ -264,8 +264,8 @@ button.submit:active {
   width: 150px;
   height: auto;
   padding: 0px 10px;
-  position: ab;
-  z-index: inherit;
+  position: relative;
+  z-index: 2;
 }
 
 .menu {
@@ -291,7 +291,7 @@ button.submit:active {
   display: none;
 }
 
-/* ! CAROUSEL (slider) */
+/* ! Carousel (slider) */
 .crs {
   padding: 10px 0;
   margin: 20px 0;
