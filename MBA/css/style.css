@@ -296,12 +296,13 @@ button.submit:active {
 }
 
 .carousel-cell {
-  width: 200;
+  width: 150px;
   height: auto;
   color: #FFF;
   margin-right: 10px;
   border-radius: 5px;
   object-fit: cover;
+  counter-increment: gallery-cell;
 }
 
 .cta {
