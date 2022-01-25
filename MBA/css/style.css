@@ -249,6 +249,7 @@ button.submit:active {
   left: 0;
   padding: 10px 10px;
   background: #00442e;
+  z-index: 1;
   display: flex;
   -webkit-flex-align: center;
   -ms-flex-align: center;
@@ -301,9 +302,18 @@ button.submit:active {
   display: inline-block;
   color: #FFF;
   margin: 0 10px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.crs-cell.is-selected {
+  opacity: 1;
+  z-index: 0
 }
 
 .crs-cell img {
+  z-index: -1;
   width: 100%;
   height: auto;
   border-radius: 20px;
