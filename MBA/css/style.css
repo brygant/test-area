@@ -118,11 +118,12 @@ video {
 
 .lg-sp {
   width: 100%;
+  max-width: 600px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .rd-10 {
@@ -448,8 +449,8 @@ button.submit:active {
   margin-top: 10px;
 }
 
-.mt100 {
-  margin-top: 100px;
+.mt90 {
+  margin-top: 90px;
 }
 
 .pdlr20 {
