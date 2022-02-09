@@ -304,6 +304,10 @@ button.submit:active {
   display: none;
 }
 
+.ctn-crs-master {
+  margin: 0 auto;
+}
+
 .cnt-crs {
   display: flex;
   flex-direction: column;
