@@ -321,6 +321,11 @@ button.submit:active {
   align-items: center;
   flex-wrap: wrap;
   padding: 30px;
+  opacity: 0;
+}
+
+.is-selected {
+  opacity: 1;
 }
 
 .crs {
@@ -345,14 +350,20 @@ button.submit:active {
   padding: 10px;
 }
 
-.data {
+
+
+.data, .week {
   width: 100%;
   background: green;
   border-radius: 100px;
   padding: 5px;
-  margin-top: 10px;
   color: #FFF;
   text-align: center;
+}
+
+.week {
+  font-weight: bold;
+  padding: 10px;
 }
 
 .cta {
