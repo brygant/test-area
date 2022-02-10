@@ -22,6 +22,7 @@ h1, h2 {
 
 h3, p {
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 li {
@@ -311,16 +312,16 @@ button.submit:active {
 .cnt-crs {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 65px 50px;
 }
 
 .cnt-multi-crs {
   display: flex;
-  gap: 50px;
+  gap: 30px 50px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 0 30px;
   opacity: 0;
 }
 
@@ -347,14 +348,17 @@ button.submit:active {
 }
 
 .cnt-txt {
-  padding: 10px;
+  padding: 0 10px;
+  height: 55px;
+  overflow: auto;
+  margin: 5px  auto;
 }
 
 
 
 .data, .week {
   width: 100%;
-  background: green;
+  background: #00442e;
   border-radius: 100px;
   padding: 5px;
   color: #FFF;
@@ -363,6 +367,10 @@ button.submit:active {
 
 .week {
   font-weight: bold;
+  background: none;
+  border: 1px solid #00442e;
+  margin: 0 30px;
+  color: #00442e;
   padding: 10px;
 }
 
@@ -486,8 +494,8 @@ button.submit:active {
   margin-top: 10px;
 }
 
-.mt80 {
-  margin-top: 80px;
+.mt90 {
+  margin-top: 90px;
 }
 
 .mb30 {
@@ -497,3 +505,24 @@ button.submit:active {
 .pdlr20 {
   padding: 0 20px;
 }
+
+/*--- Scrollbar ---*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
