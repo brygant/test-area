@@ -354,8 +354,6 @@ button.submit:active {
   margin: 5px  auto;
 }
 
-
-
 .data, .week {
   width: 100%;
   background: #00442e;
@@ -369,7 +367,6 @@ button.submit:active {
   font-weight: bold;
   background: none;
   border: 1px solid #00442e;
-  margin: 0 30px;
   color: #00442e;
   padding: 10px;
 }
