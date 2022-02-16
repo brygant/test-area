@@ -312,7 +312,9 @@ button.submit:active {
 .cnt-crs {
   display: flex;
   flex-direction: column;
-  gap: 65px 50px;
+  box-shadow: 0px 0px 5px 0px #000;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .cnt-multi-crs {
@@ -352,6 +354,10 @@ button.submit:active {
   height: 55px;
   overflow: auto;
   margin: 5px  auto;
+}
+
+.data {
+  margin-top: 65px;
 }
 
 .data, .week {
