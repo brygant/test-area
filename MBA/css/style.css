@@ -312,8 +312,7 @@ button.submit:active {
 .cnt-crs {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 6px 0px #000;
-  border: 1px solid #00442e;
+  box-shadow: 0 0 4px 0px #000;
   border-radius: 10px;
   padding: 15px;
 }
