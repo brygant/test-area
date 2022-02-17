@@ -35,7 +35,7 @@
         <div class="cnt-btn-login">
           <div class="arrow-d a-l"></div>
           <a class="btn-transp" href="#checkbox">Accedi</a>
-          <div class="arrow-d a-r" ></div>
+          <div class="arrow-d a-r"></div>
         </div>
       </div>
     </div>
@@ -73,6 +73,14 @@
 
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- Eliminazione barra indirizzi -->
+  <script>
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        window.scrollTo(0, 1);
+      }, 0);
+    });
+  </script>
 </body>
 
 </html>
