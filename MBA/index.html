@@ -22,6 +22,9 @@
 </head>
 
 <body>
+  <div class="splash">
+    <h1 class="fade-in">Benvenuto in Merryday Business App</h1>
+  </div>
   <div class="cnt">
     <div class="section cover cw">
       <video playsinline autoplay muted loop poster="images/bg.jpg" id="bgvid">
@@ -71,8 +74,18 @@
     </div>
   </div>
 
+<script>
+  const splash = document.querySelector('.splash');
+  document.addEventListener('DOMContentLoaded', (e)=>{
+    setTimeout(()=>{
+      splash.classList.add('display-none');
+    }, 3000);
+  })
+</script>
+
   <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
   <!-- Eliminazione barra indirizzi -->
   <script>
     window.addEventListener("load", function() {
