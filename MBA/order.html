@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css" integrity="sha512-B0mpFwHOmRf8OK4U2MBOhv9W1nbPw/i3W1nBERvMZaTWd3+j+blGbOyv3w1vJgcy3cYhzwgw1ny+TzWICN35Xg==" crossorigin="anonymous"
     referrerpolicy="no-referrer" />
 </head>
+
 <body>
   <div class="header cw">
     <a href="index.html"><img class="menu-lg" src="images/lg-full-white.png" alt="lg-full-white.png"></a>
@@ -138,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Lun 00/00/00</div>
+        <div class="data" id="d1w1"></div>
         <div class="spln"></div>
       </div>
 
@@ -236,7 +238,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Mar 00/00/00</div>
+        <div class="data" id="d2w1"></div>
         <div class="spln"></div>
       </div>
 
@@ -334,7 +336,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Mer 00/00/00</div>
+        <div class="data"id="d3w1"></div>
         <div class="spln"></div>
       </div>
 
@@ -432,7 +434,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Gio 00/00/00</div>
+        <div class="data" id="d4w1"></div>
         <div class="spln"></div>
       </div>
 
@@ -530,7 +532,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Ven 00/00/00</div>
+        <div class="data" id="d5w1"></div>
       </div>
     </div>
     <div class="cnt-multi-crs mt90 mb30">
@@ -629,7 +631,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Lun 00/00/00</div>
+        <div class="data" id="d1w2"></div>
         <div class="spln"></div>
       </div>
 
@@ -727,7 +729,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Mar 00/00/00</div>
+        <div class="data" id="d2w2"></div>
         <div class="spln"></div>
       </div>
 
@@ -825,7 +827,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Mer 00/00/00</div>
+        <div class="data" id="d3w2"></div>
         <div class="spln"></div>
       </div>
 
@@ -923,7 +925,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Gio 00/00/00</div>
+        <div class="data" id="d4w2"></div>
         <div class="spln"></div>
       </div>
 
@@ -1021,7 +1023,7 @@
             </div>
           </div>
         </div>
-        <div class="data">Ven 00/00/00</div>
+        <div class="data" id="d5w2"></div>
       </div>
     </div>
   </div>
@@ -1030,7 +1032,7 @@
   <!-- Pacchetto Flickity (slider) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js" integrity="sha512-+m9auGg9ZwnDc37W8RSsLhzKBLVOYsf5BKzSpYrYhQQk6hItXOhBFKHuHbMCpoABCUO6l4HVK+dFwxMIME3E7Q==" crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
-
+  <!-- Gestione menu hanmburger -->
   <script>
     $(document).ready(function() {
       /* Open Panel */
@@ -1039,12 +1041,45 @@
       });
     });
   </script>
+  <!-- Assegnazione date -->
   <script>
-    const a = new Date()
-    const date = a.toLocaleDateString().split('/')
-    const wkdays = ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom']
-    const today = wkdays[a.getDay() - 1] + ' ' + (date[0].length < 2 ? '0' + date[0] : date[0]) + '/' + (date[1].length < 2 ? '0' + date[1] : date[1]) + '/' + date[2][2] + date[2][3]
-    document.querySelector('#today').innerText = today
+    function convertDate(inputFormat) {
+      function pad(s) {
+        return (s < 10) ? '0' + s : s;
+      }
+      var d = new Date(inputFormat)
+      return [pad(d.getDate()), pad(d.getMonth() + 1), d.getFullYear()].join('/')
+    }
+    let now = new Date();
+    const d1w1 = new Date(now.setDate(now.getDate() - now.getDay() + 1)).toUTCString();
+    now = new Date();
+    const d2w1 = new Date(now.setDate(now.getDate() - now.getDay() + 2)).toUTCString();
+    now = new Date();
+    const d3w1 = new Date(now.setDate(now.getDate() - now.getDay() + 3)).toUTCString();
+    now = new Date();
+    const d4w1 = new Date(now.setDate(now.getDate() - now.getDay() + 4)).toUTCString();
+    now = new Date();
+    const d5w1 = new Date(now.setDate(now.getDate() - now.getDay() + 5)).toUTCString();
+    now = new Date();
+    const d1w2 = new Date(now.setDate(now.getDate() - now.getDay() + 8)).toUTCString();
+    now = new Date();
+    const d2w2 = new Date(now.setDate(now.getDate() - now.getDay() + 9)).toUTCString();
+    now = new Date();
+    const d3w2 = new Date(now.setDate(now.getDate() - now.getDay() + 10)).toUTCString();
+    now = new Date();
+    const d4w2 = new Date(now.setDate(now.getDate() - now.getDay() + 11)).toUTCString();
+    now = new Date();
+    const d5w2 = new Date(now.setDate(now.getDate() - now.getDay() + 12)).toUTCString();
+    document.querySelector('#d1w1').innerText = 'Lun ' + convertDate(d1w1);
+    document.querySelector('#d2w1').innerText = 'Mar ' + convertDate(d2w1);
+    document.querySelector('#d3w1').innerText = 'Mer ' + convertDate(d3w1);
+    document.querySelector('#d4w1').innerText = 'Gio ' + convertDate(d4w1);
+    document.querySelector('#d5w1').innerText = 'Ven ' + convertDate(d5w1);
+    document.querySelector('#d1w2').innerText = 'Lun ' + convertDate(d1w2);
+    document.querySelector('#d2w2').innerText = 'Mar ' + convertDate(d2w2);
+    document.querySelector('#d3w2').innerText = 'Mer ' + convertDate(d3w2);
+    document.querySelector('#d4w2').innerText = 'Gio ' + convertDate(d4w2);
+    document.querySelector('#d5w2').innerText = 'Ven ' + convertDate(d5w2);
   </script>
   <!-- Integrazione chat Whatsapp -->
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
@@ -1058,4 +1093,5 @@
     });
   </script>
 </body>
+
 </html>
